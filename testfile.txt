@@ -1,0 +1,582 @@
+Illuminate\Support\Collection^ {#3532
+  #items: array:1 [
+    0 => HiHub\Core\Users\Models\User^ {#3512
+      #connection: "pgsql"
+      #table: "hh_users"
+      #primaryKey: "id"
+      #keyType: "int"
+      +incrementing: true
+      #with: []
+      #withCount: []
+      +preventsLazyLoading: false
+      #perPage: 15
+      +exists: true
+      +wasRecentlyCreated: false
+      #escapeWhenCastingToString: false
+      #attributes: array:19 [
+        "id" => 3697
+        "email" => "karlee04@example.com"
+        "password" => null
+        "remember_token" => null
+        "created_at" => "2024-08-07 17:41:37"
+        "updated_at" => "2024-08-07 17:41:37"
+        "deleted_at" => null
+        "love_reacter_id" => null
+        "name" => null
+        "last_name" => null
+        "patronymic" => null
+        "avatar" => null
+        "birthday" => null
+        "phone" => null
+        "locale" => null
+        "data" => null
+        "additions" => "{"active_workspace_id": 954}"
+        "active" => false
+        "points" => 0
+      ]
+      #original: array:23 [
+        "id" => 3697
+        "email" => "karlee04@example.com"
+        "password" => null
+        "remember_token" => null
+        "created_at" => "2024-08-07 17:41:37"
+        "updated_at" => "2024-08-07 17:41:37"
+        "deleted_at" => null
+        "love_reacter_id" => null
+        "name" => null
+        "last_name" => null
+        "patronymic" => null
+        "avatar" => null
+        "birthday" => null
+        "phone" => null
+        "locale" => null
+        "data" => null
+        "additions" => "{"active_workspace_id": 954}"
+        "active" => false
+        "points" => 0
+        "pivot_group_id" => 2912
+        "pivot_user_id" => 3697
+        "pivot_entity_id" => 1004
+        "pivot_entity_type" => "HiHub\Core\Departments\Models\Department"
+      ]
+      #changes: []
+      #casts: array:3 [
+        "data" => "array"
+        "additions" => "array"
+        "deleted_at" => "datetime"
+      ]
+      #classCastCache: []
+      #attributeCastCache: []
+      #dateFormat: null
+      #appends: []
+      #dispatchesEvents: []
+      #observables: []
+      #relations: array:1 [
+        "pivot" => HiHub\Core\Users\Models\GroupUsers^ {#3488
+          #connection: "pgsql"
+          #table: "hh_group_users"
+          #primaryKey: "id"
+          #keyType: "int"
+          +incrementing: false
+          #with: []
+          #withCount: []
+          +preventsLazyLoading: false
+          #perPage: 15
+          +exists: true
+          +wasRecentlyCreated: false
+          #escapeWhenCastingToString: false
+          #attributes: array:4 [
+            "group_id" => 2912
+            "user_id" => 3697
+            "entity_id" => 1004
+            "entity_type" => "HiHub\Core\Departments\Models\Department"
+          ]
+          #original: array:4 [
+            "group_id" => 2912
+            "user_id" => 3697
+            "entity_id" => 1004
+            "entity_type" => "HiHub\Core\Departments\Models\Department"
+          ]
+          #changes: []
+          #casts: []
+          #classCastCache: []
+          #attributeCastCache: []
+          #dateFormat: null
+          #appends: []
+          #dispatchesEvents: []
+          #observables: []
+          #relations: []
+          #touches: []
+          +timestamps: false
+          +usesUniqueIds: false
+          #hidden: []
+          #visible: []
+          #fillable: []
+          #guarded: []
+          +pivotParent: HiHub\Core\Departments\Models\Department^ {#3507
+            #connection: "pgsql"
+            #table: "departments"
+            #primaryKey: "id"
+            #keyType: "int"
+            +incrementing: true
+            #with: []
+            #withCount: []
+            +preventsLazyLoading: false
+            #perPage: 15
+            +exists: true
+            +wasRecentlyCreated: false
+            #escapeWhenCastingToString: false
+            #attributes: array:11 [
+              "id" => 1004
+              "parent_id" => null
+              "level" => null
+              "title" => "dep1"
+              "head_id" => 3694
+              "created_at" => "2024-08-07 17:41:36"
+              "updated_at" => "2024-08-07 17:41:36"
+              "deleted_at" => null
+              "team_id" => 954
+              "_lft" => 1
+              "_rgt" => 2
+            ]
+            #original: array:11 [
+              "id" => 1004
+              "parent_id" => null
+              "level" => null
+              "title" => "dep1"
+              "head_id" => 3694
+              "created_at" => "2024-08-07 17:41:36"
+              "updated_at" => "2024-08-07 17:41:36"
+              "deleted_at" => null
+              "team_id" => 954
+              "_lft" => 1
+              "_rgt" => 2
+            ]
+            #changes: []
+            #casts: array:1 [
+              "deleted_at" => "datetime"
+            ]
+            #classCastCache: []
+            #attributeCastCache: []
+            #dateFormat: null
+            #appends: []
+            #dispatchesEvents: []
+            #observables: []
+            #relations: array:2 [
+              "head" => HiHub\Core\Users\Models\User^ {#3462
+                #connection: "pgsql"
+                #table: "hh_users"
+                #primaryKey: "id"
+                #keyType: "int"
+                +incrementing: true
+                #with: []
+                #withCount: []
+                +preventsLazyLoading: false
+                #perPage: 15
+                +exists: true
+                +wasRecentlyCreated: false
+                #escapeWhenCastingToString: false
+                #attributes: array:19 [
+                  "id" => 3694
+                  "email" => "romaine.schuppe@example.org"
+                  "password" => null
+                  "remember_token" => null
+                  "created_at" => "2024-08-07 17:41:33"
+                  "updated_at" => "2024-08-07 17:41:35"
+                  "deleted_at" => null
+                  "love_reacter_id" => null
+                  "name" => null
+                  "last_name" => null
+                  "patronymic" => null
+                  "avatar" => null
+                  "birthday" => null
+                  "phone" => null
+                  "locale" => null
+                  "data" => null
+                  "additions" => "{"active_workspace_id": 954}"
+                  "active" => false
+                  "points" => 0
+                ]
+                #original: array:19 [
+                  "id" => 3694
+                  "email" => "romaine.schuppe@example.org"
+                  "password" => null
+                  "remember_token" => null
+                  "created_at" => "2024-08-07 17:41:33"
+                  "updated_at" => "2024-08-07 17:41:35"
+                  "deleted_at" => null
+                  "love_reacter_id" => null
+                  "name" => null
+                  "last_name" => null
+                  "patronymic" => null
+                  "avatar" => null
+                  "birthday" => null
+                  "phone" => null
+                  "locale" => null
+                  "data" => null
+                  "additions" => "{"active_workspace_id": 954}"
+                  "active" => false
+                  "points" => 0
+                ]
+                #changes: []
+                #casts: array:3 [
+                  "data" => "array"
+                  "additions" => "array"
+                  "deleted_at" => "datetime"
+                ]
+                #classCastCache: []
+                #attributeCastCache: []
+                #dateFormat: null
+                #appends: []
+                #dispatchesEvents: []
+                #observables: []
+                #relations: []
+                #touches: []
+                +timestamps: true
+                +usesUniqueIds: false
+                #hidden: array:2 [
+                  0 => "password"
+                  1 => "remember_token"
+                ]
+                #visible: []
+                #fillable: array:2 [
+                  0 => "email"
+                  1 => "password"
+                ]
+                #guarded: array:1 [
+                  0 => "*"
+                ]
+                #aliases: []
+                #ownerKey: "id"
+                #forceDeleting: false
+                #rememberTokenName: "remember_token"
+              }
+              "membersWithoutHead" => Illuminate\Database\Eloquent\Collection^ {#3496
+                #items: array:3 [
+                  0 => HiHub\Core\Users\Models\User^ {#3511
+                    #connection: "pgsql"
+                    #table: "hh_users"
+                    #primaryKey: "id"
+                    #keyType: "int"
+                    +incrementing: true
+                    #with: []
+                    #withCount: []
+                    +preventsLazyLoading: false
+                    #perPage: 15
+                    +exists: true
+                    +wasRecentlyCreated: false
+                    #escapeWhenCastingToString: false
+                    #attributes: array:19 [
+                      "id" => 3696
+                      "email" => "chuels@example.org"
+                      "password" => null
+                      "remember_token" => null
+                      "created_at" => "2024-08-07 17:41:37"
+                      "updated_at" => "2024-08-07 17:41:37"
+                      "deleted_at" => null
+                      "love_reacter_id" => null
+                      "name" => null
+                      "last_name" => null
+                      "patronymic" => null
+                      "avatar" => null
+                      "birthday" => null
+                      "phone" => null
+                      "locale" => null
+                      "data" => null
+                      "additions" => "{"active_workspace_id": 954}"
+                      "active" => false
+                      "points" => 0
+                    ]
+                    #original: array:23 [
+                      "id" => 3696
+                      "email" => "chuels@example.org"
+                      "password" => null
+                      "remember_token" => null
+                      "created_at" => "2024-08-07 17:41:37"
+                      "updated_at" => "2024-08-07 17:41:37"
+                      "deleted_at" => null
+                      "love_reacter_id" => null
+                      "name" => null
+                      "last_name" => null
+                      "patronymic" => null
+                      "avatar" => null
+                      "birthday" => null
+                      "phone" => null
+                      "locale" => null
+                      "data" => null
+                      "additions" => "{"active_workspace_id": 954}"
+                      "active" => false
+                      "points" => 0
+                      "pivot_group_id" => 2912
+                      "pivot_user_id" => 3696
+                      "pivot_entity_id" => 1004
+                      "pivot_entity_type" => "HiHub\Core\Departments\Models\Department"
+                    ]
+                    #changes: []
+                    #casts: array:3 [
+                      "data" => "array"
+                      "additions" => "array"
+                      "deleted_at" => "datetime"
+                    ]
+                    #classCastCache: []
+                    #attributeCastCache: []
+                    #dateFormat: null
+                    #appends: []
+                    #dispatchesEvents: []
+                    #observables: []
+                    #relations: array:1 [
+                      "pivot" => HiHub\Core\Users\Models\GroupUsers^ {#3510
+                        #connection: "pgsql"
+                        #table: "hh_group_users"
+                        #primaryKey: "id"
+                        #keyType: "int"
+                        +incrementing: false
+                        #with: []
+                        #withCount: []
+                        +preventsLazyLoading: false
+                        #perPage: 15
+                        +exists: true
+                        +wasRecentlyCreated: false
+                        #escapeWhenCastingToString: false
+                        #attributes: array:4 [
+                          "group_id" => 2912
+                          "user_id" => 3696
+                          "entity_id" => 1004
+                          "entity_type" => "HiHub\Core\Departments\Models\Department"
+                        ]
+                        #original: array:4 [
+                          "group_id" => 2912
+                          "user_id" => 3696
+                          "entity_id" => 1004
+                          "entity_type" => "HiHub\Core\Departments\Models\Department"
+                        ]
+                        #changes: []
+                        #casts: []
+                        #classCastCache: []
+                        #attributeCastCache: []
+                        #dateFormat: null
+                        #appends: []
+                        #dispatchesEvents: []
+                        #observables: []
+                        #relations: []
+                        #touches: []
+                        +timestamps: false
+                        +usesUniqueIds: false
+                        #hidden: []
+                        #visible: []
+                        #fillable: []
+                        #guarded: []
+                        +pivotParent: HiHub\Core\Departments\Models\Department^ {#3507}
+                        #foreignKey: "group_id"
+                        #relatedKey: "user_id"
+                      }
+                    ]
+                    #touches: []
+                    +timestamps: true
+                    +usesUniqueIds: false
+                    #hidden: array:2 [
+                      0 => "password"
+                      1 => "remember_token"
+                    ]
+                    #visible: []
+                    #fillable: array:2 [
+                      0 => "email"
+                      1 => "password"
+                    ]
+                    #guarded: array:1 [
+                      0 => "*"
+                    ]
+                    #aliases: []
+                    #ownerKey: "id"
+                    #forceDeleting: false
+                    #rememberTokenName: "remember_token"
+                  }
+                  1 => HiHub\Core\Users\Models\User^ {#3512}
+                  2 => HiHub\Core\Users\Models\User^ {#3513
+                    #connection: "pgsql"
+                    #table: "hh_users"
+                    #primaryKey: "id"
+                    #keyType: "int"
+                    +incrementing: true
+                    #with: []
+                    #withCount: []
+                    +preventsLazyLoading: false
+                    #perPage: 15
+                    +exists: true
+                    +wasRecentlyCreated: false
+                    #escapeWhenCastingToString: false
+                    #attributes: array:19 [
+                      "id" => 3698
+                      "email" => "roy47@example.org"
+                      "password" => null
+                      "remember_token" => null
+                      "created_at" => "2024-08-07 17:41:37"
+                      "updated_at" => "2024-08-07 17:41:37"
+                      "deleted_at" => null
+                      "love_reacter_id" => null
+                      "name" => null
+                      "last_name" => null
+                      "patronymic" => null
+                      "avatar" => null
+                      "birthday" => null
+                      "phone" => null
+                      "locale" => null
+                      "data" => null
+                      "additions" => "{"active_workspace_id": 954}"
+                      "active" => false
+                      "points" => 0
+                    ]
+                    #original: array:23 [
+                      "id" => 3698
+                      "email" => "roy47@example.org"
+                      "password" => null
+                      "remember_token" => null
+                      "created_at" => "2024-08-07 17:41:37"
+                      "updated_at" => "2024-08-07 17:41:37"
+                      "deleted_at" => null
+                      "love_reacter_id" => null
+                      "name" => null
+                      "last_name" => null
+                      "patronymic" => null
+                      "avatar" => null
+                      "birthday" => null
+                      "phone" => null
+                      "locale" => null
+                      "data" => null
+                      "additions" => "{"active_workspace_id": 954}"
+                      "active" => false
+                      "points" => 0
+                      "pivot_group_id" => 2912
+                      "pivot_user_id" => 3698
+                      "pivot_entity_id" => 1004
+                      "pivot_entity_type" => "HiHub\Core\Departments\Models\Department"
+                    ]
+                    #changes: []
+                    #casts: array:3 [
+                      "data" => "array"
+                      "additions" => "array"
+                      "deleted_at" => "datetime"
+                    ]
+                    #classCastCache: []
+                    #attributeCastCache: []
+                    #dateFormat: null
+                    #appends: []
+                    #dispatchesEvents: []
+                    #observables: []
+                    #relations: array:1 [
+                      "pivot" => HiHub\Core\Users\Models\GroupUsers^ {#3459
+                        #connection: "pgsql"
+                        #table: "hh_group_users"
+                        #primaryKey: "id"
+                        #keyType: "int"
+                        +incrementing: false
+                        #with: []
+                        #withCount: []
+                        +preventsLazyLoading: false
+                        #perPage: 15
+                        +exists: true
+                        +wasRecentlyCreated: false
+                        #escapeWhenCastingToString: false
+                        #attributes: array:4 [
+                          "group_id" => 2912
+                          "user_id" => 3698
+                          "entity_id" => 1004
+                          "entity_type" => "HiHub\Core\Departments\Models\Department"
+                        ]
+                        #original: array:4 [
+                          "group_id" => 2912
+                          "user_id" => 3698
+                          "entity_id" => 1004
+                          "entity_type" => "HiHub\Core\Departments\Models\Department"
+                        ]
+                        #changes: []
+                        #casts: []
+                        #classCastCache: []
+                        #attributeCastCache: []
+                        #dateFormat: null
+                        #appends: []
+                        #dispatchesEvents: []
+                        #observables: []
+                        #relations: []
+                        #touches: []
+                        +timestamps: false
+                        +usesUniqueIds: false
+                        #hidden: []
+                        #visible: []
+                        #fillable: []
+                        #guarded: []
+                        +pivotParent: HiHub\Core\Departments\Models\Department^ {#3507}
+                        #foreignKey: "group_id"
+                        #relatedKey: "user_id"
+                      }
+                    ]
+                    #touches: []
+                    +timestamps: true
+                    +usesUniqueIds: false
+                    #hidden: array:2 [
+                      0 => "password"
+                      1 => "remember_token"
+                    ]
+                    #visible: []
+                    #fillable: array:2 [
+                      0 => "email"
+                      1 => "password"
+                    ]
+                    #guarded: array:1 [
+                      0 => "*"
+                    ]
+                    #aliases: []
+                    #ownerKey: "id"
+                    #forceDeleting: false
+                    #rememberTokenName: "remember_token"
+                  }
+                ]
+                #escapeWhenCastingToString: false
+              }
+            ]
+            #touches: []
+            +timestamps: true
+            +usesUniqueIds: false
+            #hidden: []
+            #visible: []
+            #fillable: array:4 [
+              0 => "title"
+              1 => "head_id"
+              2 => "parent_id"
+              3 => "team_id"
+            ]
+            #guarded: array:1 [
+              0 => "*"
+            ]
+            #forceDeleting: false
+            #pending: null
+            #moved: false
+            #scoutMetadata: []
+          }
+          #foreignKey: "group_id"
+          #relatedKey: "user_id"
+        }
+      ]
+      #touches: []
+      +timestamps: true
+      +usesUniqueIds: false
+      #hidden: array:2 [
+        0 => "password"
+        1 => "remember_token"
+      ]
+      #visible: []
+      #fillable: array:2 [
+        0 => "email"
+        1 => "password"
+      ]
+      #guarded: array:1 [
+        0 => "*"
+      ]
+      #aliases: []
+      #ownerKey: "id"
+      #forceDeleting: false
+      #rememberTokenName: "remember_token"
+    }
+  ]
+  #escapeWhenCastingToString: false
+}
